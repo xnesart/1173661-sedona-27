@@ -3,10 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
+    <header>
+      <nav>
+        <a>
+          <img src="img/index-logo.svg" width="368" height="153" alt="логотип Седона отели">
+        </a>
+        <ul>
+          <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+          <li><a href="media.html">Фото и видео</a> </li>
+          <li><a href="map.html">Карта штата</a> </li>
+          <li><a href="hotels.html">Гостиницы</a> </li>
+        </ul>
+      </nav>
+    </header>
+<main>
+  <div>
+    <h3>Инфраструктура</h3>
+    <ul>
+      <li><input type="checkbox" id="#" name="Pool"
+        checked>Бассейн</li>
+        <li><input type="checkbox" id="#" name="Parking"
+          unchecked>Парковка</li>
+          <li><input type="checkbox" id="#" name="Wifi"
+            unchecked>WI-FI</li>
+    </ul>
+    <h3>Тип жилья</h3>
+    <ul>
+      <li><input type="checkbox" id="#" name="Hotel"
+        checked>Гостиница</li>
+        <li><input type="checkbox" id="#" name="Motel"
+          checked>Мотель</li>
+          <li><input type="checkbox" id="#" name="Appartment"
+            checked>Аппартаменты</li>
+    </ul>
+    <h3>Стоимость в сутки</h3>
+    <ol>
+      <li>от 0</li>
+      <li>до 3000</li>
+    </ol>
+    <!-- Здесь будет шкала цен -->
+    <button type="button">ПОКАЗАТЬ</button>
+  </div>
+  <div>
+    <h2>Найдено:3</h2>
+    <ul>
+      <li><p>Сортировка:</p></li>
+      <li>По цене</li>
+      <li>по типу</li>
+      <li>по рейтингу</li>
+    </ul>
+    <button type="button">up</button>
+    <button type="button">down</button>
+  </div>
+  <div>
+  <h2>Amara resort & spa</h2>
+  <p>гостиница от 4000р</p>
+    <!-- <!-здесь будут звездочки-  -->
+    <p>РЕЙТИНГ: 8.5</p>
+  </div>
+  <div>
+    <h2>Desert QUAIL INN</h2>
+    <p>Мотель от 3000р</p>
+      <!-- <!-здесь будут звездочки-  -->
+      <p>РЕЙТИНГ: 8.9</p>
+    </div>
+    <div>
+      <h2>Villas at poco diablo</h2>
+      <p>Аппартаменты от 2000р</p>
+        <!-- <!-здесь будут звездочки-  -->
+        <p>РЕЙТИНГ: 9.2</p>
+      </div>
+</main>
+<footer>
+  <h2>#visitsedona</h2>
+  <h2>ТЕЛ. +7(495)-666-02-66</h2>
+  <button type="button"><a href="https://twitter.com">Twitter</a></button>
+  <button type="button"><a href="https://facebook.com">Facebook</a></button>
+  <button type="button"><a href="https://youtube.com">YouTube</a></button>
+  <button type="button"><a href="https://htmlacademy.ru">HTML Academy</a></button>
+</footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
-  </body>
+</body>
+
 </html>

@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <nav>
-         <a href="index.html">>
-            <img src="img/hotels-logo.jpg" width="140" height="71" alt="логотип города Седона"></a>
-            <ul>
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="media.html">Фото и видео</a></li>
-            <li><a href="map.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+        <nav class="navigation">
+
+            <a href="info.html" class="navigation__link">Информация</a>
+            <a href="media.html" class="navigation__link">Фото и видео</a>
+            <a href="index.html"><img src="img/hotels-logo.jpg" width="140" height="71" alt="логотип города Седона"></a>
+            <a href="map.html" class="navigation__link">Карта штата</a>
+            <a href="catalog.html" class="navigation__link">Гостиницы</a>
             </ul>
         </nav>
       </header>
       <main>
-<div>
+<div class="title">
     <img src="img/title.jpg">SEDONA
 </div>
 <div>
@@ -29,14 +29,15 @@
 
 
 
-<!-- #############Это пока не надо по заданию##################### -->
-<div>
+
+<div class="truetown">
   <p>Настоящий городок</p>
+  <div class="truetowntext">
   <P>№1</P>
   <P>Седона - не аттрацкион для туристов,<BR> там течет своя жизнь</P>
+  </div>
 </div>
-<div>
-  <!-- здесь будет картинка, справа от текста НАСТОЯЩИЙ ГОРОДОК -->
+<div class="truetownimage">
 </div>
 
   <!-- три картинки - жилье еда сувениры -->

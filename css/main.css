@@ -1,5 +1,5 @@
 body {
-  font-family: "Ptsans", sans-serif;
+  font-family: "Pt sans", Arial, sans-serif;
   /* margin: 0; */
 }
 
@@ -11,15 +11,17 @@ body {
 .menu-main {
 list-style: none;
 margin: 0;
-padding: 120;
+padding: 120px;
 }
+
 .menu-main:after {
   content: "";
   display: table;
   clear: both;
 }
-.left-item {float: left;}
-.right-item {float: right;}
+
+/* .left-item {float: left;} должно быть флексом. писать всегда не одной строкой
+.right-item {float: right;} */
 .navbar-logo {
   position: absolute;
   left: 50%;
@@ -43,22 +45,22 @@ padding: 120;
 }
 
 .menu-main a:hover {background: rgba(0,0,0,.3);}
-@media (max-width: 830px) {
+
 .menu-main {
   padding-top: 90px;
   text-align: center;
 }
 
-.navbar-logo {
+/* .navbar-logo {
   position: absolute;
   left: 50%;
   top: 10px;
   transform: translateX(-50%);
-}
+} */
 
 .menu-main li {
   float: none;
-  display: inline-block;
+  display: flex;
 }
 
 .menu-main a {
@@ -68,10 +70,39 @@ padding: 120;
 }
 .title {
 
+}
 
 }
 .title-image {
-  width: 100%;
+background-size: 100%;
+position: relative;
+background-color: #f8f8f8;
+height: 100%;
+overflow: hidden;
+/*float: right;*/
+width: 100%;
+top: 0;
+background-repeat: no-repeat;
+background-position: left top;
+z-index: -1;
+}
+
+.title-texth1 {
+  margin-top: -50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.title-texth3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  /* font-weight: bold; */
+
 }
 
 .truetown {
@@ -81,22 +112,27 @@ background-repeat: no-repeat;
 text-align: center;
 font-size: 21px;
 font-weight: bold;
-color: #fff;
-/* width: 500px;
+color: #ffffff;
+background-position: left;
+margin: 0;
+/* z-index: -1; */
+width: 300px;
 left: 45%; */
 }
 
 .truetowntext {
-  font-size: 21px;
+  font-size: 14px;
   font-weight: 400;
   float: left;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .truetownimage {
   background-image: url("../img/truetownimage.png");
+  background-position: right;
   position: absolute;
   background-repeat: no-repeat;
-  @media (max-width: 830px)
-    width: 830px;
+  width: 830px;
 
 }

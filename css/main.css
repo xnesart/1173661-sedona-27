@@ -1,15 +1,19 @@
 body {
   font-family: "Pt sans", Arial, sans-serif;
-  min-width: 1200px;
+  width: 1200px;
+  /* overflow: hidden; */
   /* margin: 0; */
 }
 .top-menu {
   /* float: top; */
+  margin-top: -40px;
   position: relative;
   background:white;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+  /* align-items: flex-end; */
+  /* max-width: 1200px; */
 }
 .menu-main {
 /* float: top; */
@@ -18,7 +22,7 @@ align-items: flex-end;
 list-style: none;
 }
 
-/* .menu-main:after {
+.menu-main:after {
   content: "";
   display: table;
   clear: both;
@@ -26,9 +30,12 @@ list-style: none;
 .navbar-logo {
   align-items: flex-end;
   position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  top: 0px;
+  width: 140px;
+  height: 70px;
+  justify-content: center;
+  /* transform: translate(-50%,-50%); */
+
 }
 .menu-main a {
   text-decoration: none;
@@ -50,35 +57,47 @@ list-style: none;
   background: rgba(0,0,0,.3);
 }
 .title {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 
 }
+
+
+.title-image {
+display: flex;
+position: relative;
+/* background-color: #f8f8f8; */
+height: 773px;
+justify-content: center;
+/* overflow: hidden; */
+width: 100%;
+/* min-width: 1200px; */
+/* top: 0; */
+
+
+z-index: 1;
+}
 .title-text {
-  position: relative;
+  align-items: center;
+  position: absolute;
+  justify-content: flex-start;
   height: 353px;
-  width: 459px;
-  background-repeat: no-repeat;
-  background-position: top;
+  top: 180px;
+  left: 42%;
+  right: 50%;
+  /* width: 459px; */
+  /* justify-content: center; */
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
   /* top: -550px;
   left: 750px; */
   z-index: 2;
 }
-.title-image {
-position: relative;
-/* background-color: #f8f8f8; */
-height: 773px;
-overflow: hidden;
-/* width: 100%; */
-background-size: 1200px;
-top: 0;
-background-repeat: no-repeat;
-background-position: center;
-z-index: 1;
-}
-
 
 
 .title-texth1 {
-  margin-top: -50px;
+  /* margin-top: -50px; */
   text-align: center;
   font-weight: bold;
   font-size: 21px;
@@ -97,35 +116,43 @@ z-index: 1;
 }
 
 .main_1 {
+
 display: flex;
-justify-content: flex-start;
+flex-direction: column;
+width: 400px;
+height: 260px;
+align-items: center;
 background-color: #81B3D2;
-position: absolute;
-background-repeat: no-repeat;
 text-align: center;
 font-size: 21px;
 font-weight: bold;
 color: #ffffff;
-background-position: left;
-margin: 0;
-/* z-index: -1; */
-width: 300px;
-left: 45%; */
-clear: both;
+float: left;
+
+
 }
 
-.truetowntext {
+.main_1_description {
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.truetownimage {
-  background-image: url("../img/truetownimage.png");
-  background-position: right;
-  position: absolute;
+.main_1_image {
+  display: flex;
   background-repeat: no-repeat;
-  width: 830px;
+  min-width: 800px;
+  height: 260px;
+  justify-content: flex-start;
+  /* overflow: hidden; */
+  /* justify-content: flex-start; */
+  /* background-size: 100%; */
+  /* align-self: flex-end; */
+  /* position: relative; */
+
+  /* float: right; */
+  /* margin: 0px auto; */
+
 
 }

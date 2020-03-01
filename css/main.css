@@ -89,27 +89,27 @@ top: 276px;
   text-align: center;
   height: 353px;
   width: 459px;
-  /* margin-top: 276px; */
   top: 80px;
   padding-bottom: 80px;
-  margin: 0 auto;
-  z-index: 1;
+    z-index: 1;
 }
 .background__image-border {
-  position: absolute;
-  display: flex;
-  top: 450px;
-  z-index: 2;
-}
-.
-
-
-.title-texth1 {
-  margin-top: 150px;
+  position: relative;
   text-align: center;
-  font-weight: bold;
+  top: 550px;
+  z-index: 1;
+}
+
+.main__section {
+  top: 50px;
+  position: relative;
+  text-align: center;
+  background-position: center;
   font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 .title-texth3 {

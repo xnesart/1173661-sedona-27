@@ -107,6 +107,8 @@ top: 276px;
   background-position: center;
   font-size: 21px;
   line-height: 26px;
+  background-image: url("../img/background-image-border.png");
+  background-repeat: no-repeat;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   z-index: 1;

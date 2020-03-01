@@ -19,22 +19,24 @@ body {
 .header {
   position: relative;
   background-color: #fff;
-  z-index: 2;
+  top: 0;
+  z-index: 1;
 }
 .logo {
-  position: absolute;
-  top: 0px;
+  position: absolute;;
+  height: 72px;
   width: 140px;
-  height: 70px;
-  left: 43%;
-  z-index: 2;
-
+  margin-left: -80px;
+  z-index: 1;
 }
 .main-nav {
   position: relative;
   min-width: 1200px;
-  z-index: 2;
-  /* text-align: center; */
+  text-align: center;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -43,37 +45,22 @@ body {
   list-style: none;
   padding-left: 75px;
   padding-right: 75px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 .main-nav__item--left {
-  line-height: 26px;
   padding-right: 150px;
-  font-size: 14px;
-  font-weight: 600;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  font-family: "Arimo", "Arial", sans-serif;
-  color: black;
-  transition: .3s linear;
 }
-
 .main-nav__item--right {
-  line-height: 26px;
   padding-left: 165px;
-  font-size: 14px;
-  font-weight: 600;
-  padding-top: 25px;
-  padding-bottom: 30px;
-  font-family: "Arimo", "Arial", sans-serif;
-  color: black;
-  transition: .3s linear;
 }
 .menu__nav-link {
   list-style: none;
   color: black;
   line-height: 26px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   list-style: none;
   text-decoration: none;
   font-family: "Arimo", "Arial", sans-serif;
@@ -82,41 +69,39 @@ body {
     background: rgba(0,0,0,.3);
   }
 
-.title {
-
-  width: 100;
-  /* justify-content: center; */
-
+.main__image {
+text-align: center;
+top: 276px;
 }
 
 
-.background-image {
-display: block;
-position: absolute;
-background-repeat: no-repeat;
-/* background-color: #f8f8f8; */
-height: 773px;
-justify-content: center;
-width: 100%;
-margin-top: -95px;
-z-index: 1;
+.background__image {
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  width: 1200;
+  height: 773px;
+  z-index: 1;
 }
-.background-text {
-  display: flex;
-  /* align-items: center; */
+.background__text {
   position: relative;
-  justify-content: flex-start;
+  text-align: center;
   height: 353px;
+  width: 459px;
+  /* margin-top: 276px; */
   top: 80px;
+  padding-bottom: 80px;
   margin: 0 auto;
-  /* width: 459px; */
-  /* justify-content: center; */
-  /* background-repeat: no-repeat; */
-  /* background-position: top; */
-  /* top: -550px;
-  left: 750px; */
+  z-index: 1;
+}
+.background__image-border {
+  position: absolute;
+  display: flex;
+  top: 450px;
   z-index: 2;
 }
+.
 
 
 .title-texth1 {

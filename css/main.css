@@ -147,27 +147,26 @@ font-family: 'Pt Sans', Arial, sans-serif;
   background-repeat: no-repeat;
   z-index: 1;
 }
-.section__reason-first {
+.section__reason--first {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 .reason__info {
   display: flex;
   flex-direction: column;
+  height: 265px;
+  width: 33.33%;
   /* position: relative; */
   background-color: #81b3d2;
   color: #fff;
-  width: 400px;
-  height: 255px;
   text-align: center;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  padding-left: 46px;
-  padding-right: 46px;
+  padding: 47px 38px 39px;
   line-height: 21px;
+  overflow: hidden;
 }
 .reason__title {
   font-size: 21px;
@@ -186,12 +185,12 @@ font-family: 'Pt Sans', Arial, sans-serif;
   font-size: 14px;
   position: relative;
 }
-.reason__img--first {
+.reason__img {
   position: relative;
   background-color: #deebf4;
-  /* overflow: hidden; */
-  width: 800px;
-  height: 255px;
+  height: 265px;
+  width: 66.66%;
+  overflow: hidden;
 }
 
 .goods {
@@ -257,4 +256,73 @@ font-family: 'Pt Sans', Arial, sans-serif;
   margin: 0;
   font-size: 14px;
   font-weight: 400;
+}
+/*
+.reason__title:nth-child(2) {
+  display: flex;
+  margin: 0;
+
+} */
+
+.section__reason--second{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.benefits {
+  background-color: #f2f2f2;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  width: 33.33%;
+  padding-bottom: 66px;
+  padding-top: 45px;
+}
+
+.benefits__item-title {
+  font-size: 21px;
+  font-weight: 700;
+}
+.benefits__item-number {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.benefits__item-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.search {
+  padding-top: 55px;
+}
+.search__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.search__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.search__text {
+  line-height: 24px;
+  font-size: 14px;
 }

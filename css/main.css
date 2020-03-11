@@ -5,7 +5,7 @@ html {
 box-sizing: inherit;
 }
 body {
-  font-family: 'Pt sans', Arial, sans-serif;
+  font-family: "Pt sans", Arial, sans-serif;
   margin : 0;
   padding : 0;
   font-size: 14px;
@@ -26,7 +26,7 @@ body {
   .bacground__image {
   display: block;
   position: absolute;
-  background-image: url(../img/background-image.jpg);
+  background-image: url(../img/main.jpg);
   justify-content: center;
   top: 60px;
   width: 1200px;
@@ -42,7 +42,7 @@ body {
   z-index: 1;
 }
 .logo {
-  position: absolute;;
+  position: absolute;
   height: 72px;
   width: 140px;
   margin-left: -80px;

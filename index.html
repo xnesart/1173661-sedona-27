@@ -99,17 +99,51 @@
       <div class="search__form-wrapper">
         <button class="search__open-btn btn btn--large btn--action" type="button" name="search-open">Поиск гостиницы в Седоне</button>
         <form class="search__form" action="hotel-search" method="get">
-          <div class="searc__form-row">
-            <label class="search__form-label"
+          <div class="search__form-row">
+            <label class="search__form-label" for="check-in">Дата заезда</label>
+            <div class="search__form_input-wrapper  search__form_input-wrapper--calendar">
+              <!-- //тут какая то хрень с айди// -->
+              <input class="search__form-input" type="text" placeholder="24 апреля 2017">
+              <button class="search__form_calendar-button"type="button" name="calendar">
+                <!-- КАКАЯ ТО БОТВА С ИКОНКОЙ КАЛЕНДАРЯ, ДОРАБОТАТЬ  -->
+                <svg class="search__form_calendar-icon" viewbox="0 0 21 22"></svg>
+              </button>
+            </div>
           </div>
       </div>
-      <ul>
-        <h2>Поиск гостиницы в Седоне</h2>
-        <li>Дата заезда: 24 апреля 2017</li>
-        <li>Дата выезда: 4 июля 2017</li>
-        <li>Взрослые: 2 дети: 0</li>
-        <button type="button">Найти</button>
-      </ul>
+      <div class="search__form-row">
+        <label class="search__form-label" for="check-out">Дата выезда</label>
+        <div class="search__form_input-wrapper  search__form_input-wrapper--calendar">
+          <input class="search__form-input" type="text" placeholder="4 июля 2017">
+          <button class="search__form_calendar-button"type="button" name="calendar">
+          <svg class="search__form_calendar-icon" viewbox="0 0 21 22"></svg>
+        </button>
+        </div>
+      </div>
+      <div class="search__form-row search__form_row-columns">
+      <div class="search__form-row search__form_row-column--1">
+        <label class="search__form-label" for="adults">Взрослые</label>
+        <button class="search__form_inptut-control search__form_input-control--minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+        <!-- РАЗОБРАТЬСЯ С ID -->
+        <input class="search__form-input"type="text" value="2">
+        <button class="search__form-control search__form_input-control--plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+      </div>
+      </div>
+      <div class="search__form-row search__form_row-column--2">
+        <label class="search__form-label" for="kids">Дети</label>
+        <button class="search__form_inptut-control search__form_input-control--minus" type="button"><span class="visually-hidden">Увеличить</span></button>
+        <!-- РАЗОБРАТЬСЯ С ID -->
+        <input class="search__form-input"type="text" value="0">
+        <button class="search__form-control search__form_input-control--plus" type="button"><span class="visually-hidden">Уменьшить</span></button>
+        </div>
+
+        <button class="search__for-sumbit btn btn-media" type="submit" name="search-submit">Найти</button>
+      </form>
+      <section class="map">
+        <h2 class="visually-hidden">Расположение Седоны на карте</h2>
+        <img class="map__img" src="img/map.png" width="1200" height="593" alt="Седона на карте">
+
+    </section>
     </form>
     </div>
     </section>
